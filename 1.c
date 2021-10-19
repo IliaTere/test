@@ -1,5 +1,5 @@
 #include <stdio.h>
-double max (double first, double second);
+// test update 1.1
 int main (void){
     double a,b;
     double result = (scanf("%lf %lf", &a, &b));
@@ -12,7 +12,11 @@ int main (void){
         return 0;   
     }
     else {
-        printf("%lf", b);
+        while (b == a) {
+            b = b - 1;
+            printf("%lf", b);
+        }
+        
     }
     return 0;
 
